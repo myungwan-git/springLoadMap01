@@ -25,7 +25,6 @@ public class MemberService {
         validateDuplicateMember(member);  // 중복 검증 리팩터링 메서드.
         //위에서 중복이 없으면 저장
         memberRepository.save(member);
-
         return member.getId();
     }
 
